@@ -30,7 +30,7 @@ public abstract class Vehiculo {
     public boolean estaAlquilado() {return alquilado;}
 
     public void mostrar() {
-        System.out.println("Matricula " + matricula + "\tAlquilado " + alquilado + "\t");
+        System.out.print("Matricula: " + matricula + "\tAlquilado: " + alquilado + "\t");
     }
 
     public boolean equals(Object obj) {
@@ -41,9 +41,9 @@ public abstract class Vehiculo {
         return false;
     }
 
-    /* public void setAlquilado(boolean alquilado) {
+    public void setAlquilado(boolean alquilado) {
         this.alquilado = alquilado;
-    } */
+    }
 
     public String getMatrcula() {return matricula;}
 }
