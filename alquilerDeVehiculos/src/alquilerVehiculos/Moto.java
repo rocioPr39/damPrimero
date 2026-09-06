@@ -6,7 +6,7 @@ public final class Moto extends Vehiculo {
     private int semanaAlquiler;
     private int semanaDevolucion;
 
-    public Moto(String matricula, double precioSemana) {
+    public Moto(String matricula, int cilindrada, double precioSemana) {
         super(matricula);
         this.cilindrada = cilindrada;
         this.precioSemana = precioSemana;
@@ -41,6 +41,7 @@ public final class Moto extends Vehiculo {
     @Override
     public void mostrar() {
         super.mostrar();
+        System.out.print("Cilindrada: " + cilindrada + "\t");
         System.out.println("Precio semana: " + precioSemana + ", semana alquiler: " + semanaAlquiler + ", semana devolucion: " + semanaDevolucion);
     }
 
